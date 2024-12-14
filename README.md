@@ -17,7 +17,8 @@
 
 ## 3 代入文
 
-- kosu = 3 , kingaku = 300 ※複数文を1行で表記できる kingaku_goukei = kingaku * kosu
+- kosu = 3 , kingaku = 300 ※複数文を1行で表記できる
+- kingaku_goukei = kingaku * kosu
 - namae = "Komaba"
 - Data = [10,20,30,40,50,60]
 - Tokutenのすべての値を0にする
