@@ -1,6 +1,8 @@
 # DNCL2
 
-A sample program for common test representation.
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
+> A sample program for common test representation.
 
 ## Features
 - Examples of program representation for the "Information I" subject in high school.
