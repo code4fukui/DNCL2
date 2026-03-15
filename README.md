@@ -1,106 +1,14 @@
-# 共通テスト用プログラム表記の例示
+# DNCL2
 
-高等学校の「情報I」の授業で使用するプログラミング言語は多様であることから，共通テスト『情報I』の試作問題作成にあたり，共通テスト用のプログラム表記を使用します。以下，参考のためにその基本を例示します。しかしながら，問題文の記述を簡潔にするなどの理由で，この説明文書の記述内容に従わない形式で出題することもあります。したがって，共通テスト『情報I』の受験に際しては，当該問題文の中の説明や指示に注意し，それらに沿って解答してください。
+A sample program for common test representation.
 
-なお，経過措置問題『旧情報(仮)』についても同様に扱うこととします。
+## Features
+- Examples of program representation for the "Information I" subject in high school.
+- Covers variable definitions, string handling, assignment, arithmetic, comparison, logical operations, functions, conditional statements, and loops.
+- Provides a reference to the overview of the "Information" subject in the Common Test for University Admissions.
 
-## 1 変数
+## Usage
+This project is intended as a reference for the program representation used in the "Information I" common test.
 
-- 通常の変数例: kosu，kingaku_kei (変数名は英字で始まる英数字と「_」の並び)
-- 配列変数の例: Tokuten[3]，Data[2,4] (配列名は先頭文字が大文字) ※特に説明がない場合，配列の要素を指定する添字は0から始まる
-
-## 2 文字列
-
-- 文字列はダブルクォーテーション(")で囲む
-- moji = "I'll be back."
-- message = "祇園精舎の" + "鐘の声" ※ +で連結できる
-
-## 3 代入文
-
-- kosu = 3 , kingaku = 300 ※複数文を1行で表記できる
-- kingaku_goukei = kingaku * kosu
-- namae = "Komaba"
-- Data = [10,20,30,40,50,60]
-- Tokutenのすべての値を0にする
-- nyuryoku =【外部からの入力】
-
-## 4 算術演算
-
-- 加減乗除の四則演算は，『+』，『-』，『*』，『/』で表す
-- 整数の除算では，商(整数)を『÷』で，余りを『%』で表す
-- べき乗は『**』で表す
-
-## 5 比較演算
-
-- 『==』(等しい)，『!=』(等しくない)，『>』，『<』，『>=』，『<=』
-
-## 6 論理演算
-
-- 『and』(論理積)，『or』(論理和)，『not』(否定)
-
-## 7 関数
-
-値を返す関数例:
-```
-kazu = 要素数(Data)
-saikoro = 整数(乱数()*6)+1
-```
-
-値を返さない関数例:
-```
-表示する(Data)
-表示する(Kamoku[i],"の得点は",Tensu[i],"です")
-```
-- ※「表示する」関数はカンマ区切りで文字列や数値を連結できる
-- ※「表示する」関数以外は基本的に問題中に説明あり
-
-## 8 制御文（条件分岐）
-
-```
-もし x < 3 ならば:
-| x = x + 1
-⎿ y = y + 1
-```
-
-```
-もし x == 3 ならば:
-| x = x – 1
-そうでなければ:
-⎿ y = y * 2
-```
-
-```
-もし x >= 3 ならば:
-| x = x – 1
-そうでなくもし x < 0 ならば:
-| x = x * 2
-そうでなければ:
-⎿ y = y * 2
-```
-- ※|と⎿で制御範囲を表し，⎿は制御文の終わりを示す
-
-## 9 制御文（繰返し）
-
-```
-x を 0 から 9 まで 1 ずつ増やしながら繰り返す:
-⎿ goukei = goukei + Data[x]
-```
-- ※「減らしながら」もある
-
-```
-n < 10 の間繰り返す:
-| goukei = goukei + n
-⎿ n = n + 1
-```
-- ※|と⎿で制御範囲を表し，⎿は制御文の終わりを示す
-
-## 10 コメント
-
-```
-atai = 乱数() #0以上1未満のランダムな小数をataiに代入する
-```
-- ※1行内において#以降の記述は処理の対象とならない
-
-## reference
-
-- [令和７年度大学入学共通テスト 試作問題「情報」の概要 独立行政法人大学入試センター](https://www.dnc.ac.jp/albums/abm.php?d=511&f=abm00003141.pdf&n=6-1_%E6%A6%82%E8%A6%81%E3%80%8C%E6%83%85%E5%A0%B1%E3%80%8D.pdf)
+## License
+This project is open-source and released under an unspecified license.
