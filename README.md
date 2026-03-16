@@ -13,4 +13,4 @@
 This project is intended as a reference for the program representation used in the "Information I" common test.
 
 ## License
-This project is open-source and released under an unspecified license.
+MIT License — see [LICENSE](LICENSE).
